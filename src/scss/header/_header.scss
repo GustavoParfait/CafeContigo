@@ -1,0 +1,57 @@
+/*----------header----------*/
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    padding: 5rem 0;
+    position: relative;
+    @include m.tablet { 
+        min-height: 70rem;
+     }
+
+    @include m.phone {
+        padding: 4rem;
+    }
+
+    @include m.tablet {
+        padding: 3rem;
+    }
+
+    @include m.desktop {
+        padding: 2rem;
+    }
+
+    &::before {
+        content: '';
+        background-color: v.$black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.6;
+    }
+
+    .contentHeader {
+        position: relative;
+
+        h1 {
+            text-align: center;
+            color: v.$white;
+            text-transform: uppercase;
+            margin-top: 5rem;
+
+            @include m.tablet { 
+                margin-top: 10rem;
+             }
+        }
+    }
+}
+
+
+
+/*img header de cada pagina*/
+.headerInicio{
+    background-image: url(../img/header_inicio.jpg);
+
+}
