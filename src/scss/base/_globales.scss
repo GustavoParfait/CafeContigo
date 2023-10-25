@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font-family: v.$fuente_principal;
+    font-family: v.$fuenteSecundary;
     font-size: 1.6rem;
     background-color: v.$lightCofe;
 }
@@ -36,20 +36,4 @@ a {
 img {
     max-width: 100%;
     display: block;
-}
-
-h1, h2, h3 {
-    margin: 0 0 v.$separation 0;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3.6rem;
-}
-
-h3 {
-    font-size: 3.2rem;
 }
