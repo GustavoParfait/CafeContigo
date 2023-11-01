@@ -524,6 +524,20 @@ h3 {
   }
 }
 
+.footer {
+  background-color: #5E311E;
+}
+.footer .ContentFooter {
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .footer .ContentFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
 .contentPrincipal {
   background-color: #ffffff;
   padding: 5rem 2rem;
@@ -667,6 +681,11 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  .menu li {
+    padding: 0 5rem;
+  }
 }
 .menu li p {
   color: #ffffff;
