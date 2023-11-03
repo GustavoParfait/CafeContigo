@@ -476,6 +476,10 @@ h3 {
   background-image: url(../img/header_nosotros.jpg);
 }
 
+.headerProceso {
+  background-image: url(../img/header_proceso.jpg);
+}
+
 /*----------navigation----------*/
 .navPrincipal {
   display: flex;
@@ -765,4 +769,53 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+}
+.contentWe .image {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .contentWe .image {
+    margin: 0 3rem 0 0;
+  }
+}
+.contentWe .image img {
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+  border: 3rem solid #ffffff;
+  box-shadow: 9px 10px 5px -7px rgba(0, 0, 0, 0.35);
+}
+.contentWe .text blockquote {
+  margin: 0;
+  padding: 1rem;
+  border-left: 0.5rem solid #5E311E;
+  font-size: 2rem;
+}
+
+.coffeeProcess {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .coffeeProcess {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+}
+.coffeeProcess .image, .coffeeProcess .text {
+  flex: 1rem;
+}
+.coffeeProcess .text {
+  margin-top: 1rem;
+}
+.coffeeProcess .text h3 {
+  margin: 0;
+  text-align: left;
+  color: #5E311E;
+}
+.coffeeProcess .text h3::after {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 2px;
+  background-color: #C39C63;
 }

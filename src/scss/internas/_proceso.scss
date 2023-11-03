@@ -1,0 +1,32 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.coffeeProcess {
+    margin-bottom: v.$separation;
+    @include m.tablet { 
+        display: flex;
+        gap: v.$separation;
+        align-items: center;
+     }
+
+    .image, .text {
+        flex: 1rem;
+    }
+
+    .text {
+        margin-top: 1rem;
+        h3 {
+            margin: 0;
+            text-align: left;
+            color: v.$primary;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 35%;
+                height: 2px;
+                background-color: v.$secondary;
+            }
+        }
+    }
+}
