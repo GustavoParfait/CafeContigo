@@ -8,6 +8,16 @@
         gap: v.$separation;
         align-items: center;
      }
+     
+     &:last-of-type {
+        margin-bottom: 0;
+     }
+
+     &:nth-child(even) {
+        .text {
+            order: -1;
+        }
+     }
 
     .image, .text {
         flex: 1rem;

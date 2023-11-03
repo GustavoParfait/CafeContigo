@@ -1,6 +1,6 @@
 /*----------utilities----------*/
 
-@use 'variables' as v;
+@use 'base/variables' as v;
 
 .textCenter {
     text-align: center;
@@ -16,4 +16,8 @@
 
 .marginNegative-10 {
     margin-top: -10rem;
+}
+
+.paddingBottom-0 {
+    padding-bottom: 0;
 }
